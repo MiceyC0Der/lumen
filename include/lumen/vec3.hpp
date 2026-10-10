@@ -28,9 +28,8 @@ constexpr double dot(Vec3 a, Vec3 b) {
 
 }
 
-constexpr double norm(Vec3 a) { 
-    return std::sqrt(a.x * a.x + a.y * a.y + a.z * a.z);
-
+inline double norm(Vec3 a) {
+    return std::sqrt(dot(a, a));
 }
 
 
